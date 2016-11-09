@@ -4,6 +4,7 @@
   "description": "",
   "main": "gulpfile.js",
   "dependencies": {
+    "bootstrap": "^3.3.7",
     "config": "^1.24.0"
   },
   "devDependencies": {

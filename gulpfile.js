@@ -52,7 +52,7 @@ gulp.task('js', function() {
   return gulp.src(['js/*.js'])
   .pipe(concat("app.min.js"))
   .pipe(size())
-  .pipe(uglify())//minify js
+  //.pipe(uglify())//minify js
   .pipe(gulp.dest('dist/js'))
   .pipe(notify('JS modifié'))
   .pipe(reload({stream: true, once:true}));

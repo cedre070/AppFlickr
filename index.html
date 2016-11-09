@@ -3,13 +3,42 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+
     <link rel="stylesheet" href="bower_components/materialize/dist/css/materialize.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/photo.css" media="screen" title="no title">
   </head>
   <body>
+    <div class="container">
 
+              <a class="waves-effect waves-light btn" id='navJavascript'>Javascript</a>
+              <a class="waves-effect waves-light btn" id='navPhp'>PHP</a>
+              <a class="waves-effect waves-light btn" id='navAngular'>AngularJs</a>
+              <a class="waves-effect waves-light btn" id='navHtml'>HTML</a>
+              <a class="waves-effect waves-light btn" id='navCss'>CSS</a>
+              <a class="waves-effect waves-light btn" id='navPlus' style="display:none"></a>
+
+
+    <div id="photos">
+        
+           </div>
+
+           <ul id="slide-out" class="side-nav">
+               <li><div class="userView">
+                 <form class="tags" action="index.html" method="post">
+                   <input type="tags" name="tag" value="">
+                 </form>
+               </div></li>
+               <li><button class="btn waves-effect waves-light" type="submit" name="action">Ajouter d'autre photos</button></li>
+             </ul>
+             <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+
+
+
+  </div>
   </body>
   <script src='bower_components/jquery/dist/jquery.min.js'></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src='bower_components/materialize/dist/js/materialize.min.js'></script>
   <script src='js/photo.js'></script>
 </html>

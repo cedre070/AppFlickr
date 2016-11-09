@@ -78,7 +78,7 @@ Etape 1/ Ajax avec l'API Flickr
 
 
 
-1/ Créer un Menu Navbar de 5 Buttons centrés sur la pages: Javascript - PHP - AngularJs - HTML - CSS
+X1/ Créer un Menu Navbar de 5 Buttons centrés sur la pages: Javascript - PHP - AngularJs - HTML - CSS
 
 
 2/ Quand je clique sur un boutton, cela m’ajoute une classe active sur le bouton et ça me charge des images en AJAX les photos Flickr avec la fonction $.ajax()  dans une Grid de photos
