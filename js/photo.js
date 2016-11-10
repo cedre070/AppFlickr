@@ -1,5 +1,6 @@
 $(document).ready(function(){
    $(".button-collapse").sideNav();
+//bouton nav javascript
    $("a#navJavascript").click(function(){
      console.log('cou');
   $.getJSON('https://api.flickr.com/services/feeds/photos_public.gne?tags=javascript&format=json&jsoncallback=?',
@@ -12,17 +13,87 @@ $(document).ready(function(){
       $.each(data.items, function(i,item){
         $("<img/>").attr("src", item.media.m).prependTo("#photos");
         if (i == 10)return false;
-
       });
-
   });
-
-
-
 });
-      //jquery : boucle sur datas each()
-      //append()
-      //thumbnailUrl()
+//bouton nav php
+$("a#navPhp").click(function(){
+  console.log('cou');
+$.getJSON('https://api.flickr.com/services/feeds/photos_public.gne?tags=php&format=json&jsoncallback=?',
+{
+ tags: $("a#navPhp").text(),
+ tagmode:"any",
+ format:"json"
+},
+ function(data){
+   $.each(data.items, function(i,item){
+     $("<img/>").attr("src", item.media.m).prependTo("#photos");
+     if (i == 10)return false;
+   });
+});
+});
+//bouton nav angular
+$("a#navAngular").click(function(){
+  console.log('cou');
+$.getJSON('https://api.flickr.com/services/feeds/photos_public.gne?tags=php&format=json&jsoncallback=?',
+{
+ tags: $("a#navAngular").text(),
+ tagmode:"any",
+ format:"json"
+},
+ function(data){
+   $.each(data.items, function(i,item){
+     $("<img/>").attr("src", item.media.m).prependTo("#photos");
+     if (i == 10)return false;
+   });
+});
+});
+//bouton nav html
+$("a#navHtml").click(function(){
+  console.log('cou');
+$.getJSON('https://api.flickr.com/services/feeds/photos_public.gne?tags=html&format=json&jsoncallback=?',
+{
+ tags: $("a#navHtml").text(),
+ tagmode:"any",
+ format:"json"
+},
+ function(data){
+   $.each(data.items, function(i,item){
+     $("<img/>").attr("src", item.media.m).prependTo("#photos");
+     if (i == 10)return false;
+   });
+});
+});
+//bouton nav css
+$("a#navCss").click(function(){
+  console.log('cou');
+$.getJSON('https://api.flickr.com/services/feeds/photos_public.gne?tags=css&format=json&jsoncallback=?',
+{
+ tags: $("a#navCss").text(),
+ tagmode:"any",
+ format:"json"
+},
+ function(data){
+   $.each(data.items, function(i,item){
+     $("<img/>").attr("src", item.media.m).prependTo("#photos");
+     if (i == 10)return false;
+   });
+});
+});
+
+//Quand je saisis un texte, cela s'ajoute un bouton “actif” au Menu des Bouttons et quand je clique sur ce bouton cela me charges sur Flickr les images en conséquent
+var saisi = $('input.saisi').val();
+var search = $('span.search').val();
+search == saisi;
+if (saisi){
+
+  $('a#navPlus').toggle()
+}
+
+//5/ Afficher les tags saisies du formulaire avec des Chips de Materializecss sous le champs input Tags
+$('.chips').on('chip.add', function(e, chip){
+    // you have the added chip here
+  });
 
 
 

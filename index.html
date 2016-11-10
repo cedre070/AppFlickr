@@ -16,20 +16,24 @@
               <a class="waves-effect waves-light btn" id='navAngular'>AngularJs</a>
               <a class="waves-effect waves-light btn" id='navHtml'>HTML</a>
               <a class="waves-effect waves-light btn" id='navCss'>CSS</a>
-              <a class="waves-effect waves-light btn" id='navPlus' style="display:none"></a>
+              <a class="waves-effect waves-light btn" id='navPlus' style="display:none"><span class='search'></span></a>
 
 
-    <div id="photos">
-        
-           </div>
+
+      <div class="row">
+        <div id="photos" class="col-md-12"></div>
+
+      </div>
+
 
            <ul id="slide-out" class="side-nav">
                <li><div class="userView">
                  <form class="tags" action="index.html" method="post">
-                   <input type="tags" name="tag" value="">
+                   <input class='saisi' type="tags" name="tag" value="">
                  </form>
                </div></li>
                <li><button class="btn waves-effect waves-light" type="submit" name="action">Ajouter d'autre photos</button></li>
+               <li><div class="chips"></div></li>
              </ul>
              <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
 
