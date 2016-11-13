@@ -11,8 +11,25 @@ body{
 }
 
 #navBouton{
-  margin-top: 20px;
+  margin-top: 30px;
+  padding: 40px 0 40px 0;
+  background-image:linear-gradient(60deg, #b4ede7, white);
+  display: flex;
+  justify-content: space-around;
+
 }
 .ajout{
   display: inline-block;
+}
+
+#photos{
+  margin:20px;
+
+}
+.tag{
+  margin-top: 20px;
+}
+img{
+  margin : 10px;
+
 }

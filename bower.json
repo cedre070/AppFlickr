@@ -16,6 +16,8 @@
   ],
   "dependencies": {
     "materialize": "^0.97.8",
-    "bootstrap": "^3.3.7"
+    "bootstrap": "^3.3.7",
+    "animate.css": "animate-css#^3.5.2",
+    "aos": "^2.1.1"
   }
 }

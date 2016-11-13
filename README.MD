@@ -90,7 +90,7 @@ X4/ Mettre en, place une SideNav et à l’intérieur créer un formulaire avec 
  + un champs input "Tags"
 + un bouton de soumission "Ajouter d'autre photos"
 Quand je saisis un texte, cela s'ajoute un bouton “actif” au Menu des Bouttons et quand je clique sur ce bouton cela me charges sur Flickr les images en conséquent
-5/ Afficher les tags saisies du formulaire avec des Chips de Materializecss sous le champs input Tags http://materializecss.com/chips.html
+X5/ Afficher les tags saisies du formulaire avec des Chips de Materializecss sous le champs input Tags http://materializecss.com/chips.html
 6/ Mettre en mémoire les Tags saisies grâce à la Session Storage  (voir lien)
 7/ Quand on arrive sur l'application, par défaut les tags se recharge.
 8/ Ajouter un Range Slider Materialize CSS qui me permet d'afficher un nombre limité d'items dans la Grid ( de 10 à 100)
@@ -111,6 +111,6 @@ Magasin à Bonus
 
 Bonus: Préparer en SASS les medias queries pour tablette, phablette et smartphone de l’application
 Bonus: Ajouter “Pre-loader” une animation qui se lance au chargement des photos en AJAX
-Bonus: Je peux ajouter plusieurs tags séparés par des virgules
+XBonus: Je peux ajouter plusieurs tags séparés par des virgules
 Bonus: Ajouter le plugin Masonry et un effet au scroll  (voir lien Typanus)
 Bonus: Créer un classe Flickr en ES6 transpilé par Babel avec le module npm Babelify afind e factoriser les fonctionnalités dans une classe qui gères tout le fonctionnement  logique de l’applications

@@ -4,13 +4,16 @@
     <meta charset="utf-8">
     <title></title>
 
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="bower_components\aos\dist\aos.css" rel="stylsheet">
+    <link rel="stylesheet" href="bower_components\animate.css\animate.min.css" >
     <link rel="stylesheet" href="bower_components/materialize/dist/css/materialize.min.css">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/photo.css" media="screen" title="no title">
   </head>
   <body>
     <div class="container">
-            <div id="navBouton">
+            <div id="navBouton" class="z-depth-4">
               <a class="waves-effect waves-light btn" >Javascript</a>
               <a class="waves-effect waves-light btn" >PHP</a>
               <a class="waves-effect waves-light btn" >AngularJs</a>
@@ -20,10 +23,10 @@
             </div>
 
 
-      <div id="photos">
-
-
-      </div>
+        <div  class="col s3" class="progress">
+          <ul id="photos" class="indeterminate">
+          </ul>
+        </div>
 
 
            <ul id="slide-out" class="side-nav">
@@ -33,7 +36,7 @@
                  </form>
                </div></li>
                <li><div class="chips"></div></li>
-               <li><button class="btn waves-effect waves-light" type="submit" name="action">Ajouter d'autre photos</button></li>
+               <li><button class="btn waves-effect waves-light" type="submit" name="action">Ajouter d'autre photos<i class="material-icons right">send</i></button></li>
                <li id='tags'></li>
              </ul>
              <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -43,6 +46,7 @@
   </div>
   </body>
   <script src='bower_components/jquery/dist/jquery.min.js'></script>
+  <script src="bower_components\aos\dist\aos.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src='bower_components/materialize/dist/js/materialize.min.js'></script>
   <script src='js/photo.js'></script>

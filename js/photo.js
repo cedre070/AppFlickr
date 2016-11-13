@@ -1,6 +1,14 @@
 $(document).ready(function(){
    $("a.button-collapse").sideNav();
 
+   $("a.waves-effect").hover(function(){
+     $(this).addClass('animated pulse');
+   },
+   function(){
+   $( this ).removeClass('animated pulse');
+   });
+
+
 $("a.waves-effect").click(function(){
   $("#photos").empty();
 });
@@ -15,6 +23,7 @@ $("a.waves-effect").click(function(){
     tagmode:"any",
     format:"json"
   },
+
     function(data){
       $.each(data.items, function(i,item){
         $("<img/>").attr("src", item.media.m).prependTo("#photos");
@@ -39,10 +48,10 @@ console.log(saisi);
 
 
 
-            $("a.plus").click(function(){
+            $("a.waves-effect").click(function(){
               $("#photos").empty();
             });
-            $("a.plus").click(function(){
+            $("a.waves-effect").click(function(){
 
 
             $.getJSON('https://api.flickr.com/services/feeds/photos_public.gne?format=json&jsoncallback=?',
@@ -62,9 +71,13 @@ console.log(saisi);
             });
 
             $('a.button-collapse').sideNav('hide');
-            $('li#tags').after('<div class="chip">' + saisi + '</div>');
-            console.log(dfgb);
             $('input.saisi').val("");
+            $('li#tags').after('<div class="chip tag">' + saisi + '<i class="close material-icons">close</i>' + '</div>'+','+' ');
+            console.log(dfgb);
+            sessionStorage.setItem("$('.chip')","saisi");
+            var saisi = sessionStorage.getItem("saisi");
+            console.log(saisi);
+
     });//fin click
 
 
