@@ -38,7 +38,7 @@ $("a.waves-effect").click(function(){
 
     function(data){
       $.each(data.items, function(i,item){
-        $("<div class='card'><img /></div>").find('img').attr("src", item.media.m).parent().prependTo("#photos");
+        $("<div class='row place'><div class='col s12 m4'><div id='photos' class='card'><div class='card-image'><img /><div class='card-content'></div></div></div></div>").find('img').attr("src", item.media.m).parent().prependTo("#photos");
         if (i == 9)return false;
 
       });
