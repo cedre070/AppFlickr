@@ -15,7 +15,9 @@ $(document).ready(function(){
    function(){
    $( this ).removeClass('animated pulse');
    });
-   
+
+
+
 
 
 // refresh bouton
@@ -36,7 +38,7 @@ $("a.waves-effect").click(function(){
 
     function(data){
       $.each(data.items, function(i,item){
-        $("<img/>").attr("src", item.media.m).prependTo("#photos");
+        $("<div class='card'><img /></div>").find('img').attr("src", item.media.m).parent().prependTo("#photos");
         if (i == 9)return false;
 
       });
@@ -72,7 +74,7 @@ console.log(saisi);
             },
              function(data){
                $.each(data.items, function(i,item){
-                 $("<img/>").attr("src", item.media.m).prependTo("#photos");
+                 $("<div class='card'><img/></div>").find('img').attr("src", item.media.m).prependTo("#photos");
                  if (i == 9)return false;
 
 
