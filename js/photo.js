@@ -1,14 +1,24 @@
 $(document).ready(function(){
    $("a.button-collapse").sideNav();
 
+
+//animated bouton
    $("a.waves-effect").hover(function(){
      $(this).addClass('animated pulse');
    },
    function(){
    $( this ).removeClass('animated pulse');
    });
+   $("a.button-collapse").hover(function(){
+     $(this).addClass('animated pulse');
+   },
+   function(){
+   $( this ).removeClass('animated pulse');
+   });
+   
 
 
+// refresh bouton
 $("a.waves-effect").click(function(){
   $("#photos").empty();
 });
@@ -73,7 +83,7 @@ console.log(saisi);
             $('a.button-collapse').sideNav('hide');
             $('input.saisi').val("");
             $('li#tags').after('<div class="chip tag">' + saisi + '<i class="close material-icons">close</i>' + '</div>'+','+' ');
-            console.log(dfgb);
+            console.log();
             sessionStorage.setItem("$('.chip')","saisi");
             var saisi = sessionStorage.getItem("saisi");
             console.log(saisi);
